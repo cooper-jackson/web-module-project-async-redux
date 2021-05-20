@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import axios from 'axios';
 
 import { fetchCard } from './../actions'
-import { render } from 'react-dom';
 
 
 
@@ -13,6 +11,10 @@ const Card = (props) => {
         props.fetchCard()
     }
     
+    useEffect (() => {
+        props.fetchCard()
+    }, [])
+
     return (
         <>
             <div>

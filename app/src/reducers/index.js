@@ -1,4 +1,4 @@
-import { FETCH_START, FETCH_SUCCESS, FETCH_FAIL} from './../actions';
+import { FETCH_START, FETCH_SUCCESS } from './../actions';
 
 const initialState = {
     card: {
