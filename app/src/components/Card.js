@@ -12,7 +12,7 @@ const Card = (props) => {
     }
     
     useEffect (() => {
-        props.fetchCard()
+        fetchCard()
     }, [])
 
     return (
