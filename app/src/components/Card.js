@@ -20,14 +20,16 @@ const Card = (props) => {
             <div>
                 <h2>Pick a random MTG card!</h2>
                 <img src={props.card.imageUrl} alt="mtg-card"/>
-                <button onClick={handleFetchCard}>Random Card!</button>
+                <div>
+                    <button onClick={handleFetchCard}>New Random Card!</button>
+
+                </div>
                 <h3>{props.card.name}</h3>
                 <h4>{props.card.manaCost}</h4>
                 <h4>{props.card.originalType}</h4>
                 <h3 id="originalText">{props.card.originalText}</h3>
                 
             </div>
-           
         </>
     )
 }
